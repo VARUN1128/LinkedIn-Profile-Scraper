@@ -1,5 +1,5 @@
 services:
-  - type: web
+  - type: worker
     name: linkedin-scraper
     env: docker
     dockerfilePath: ./Dockerfile
@@ -9,6 +9,7 @@ services:
         sync: false
       - key: LINKEDIN_PASSWORD
         sync: false
-    healthCheckPath: /
     plan: starter
+    # For scheduled runs, you can set up a cron job in Render's dashboard
+    # or use Render's cron job feature
 

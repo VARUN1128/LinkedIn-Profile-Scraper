@@ -51,6 +51,3 @@ chromedriver
 chromedriver.exe
 *.crx
 
-# Docker
-.dockerignore
-
